@@ -20,7 +20,7 @@ with col1:
           if len(text) > 0:
             if text in dict:
               st.session_state["text_list"].append('あなた：' + text)
-              st.session_state["text_list"].append('ボット：' + dict(text))
+              st.session_state["text_list"].append('ボット：' + dict[text])
             else:
               st.session_state["text_list"].append('あなた：' + text)
               st.session_state["text_list"].append('ボット：' + text + "なんですね。")
