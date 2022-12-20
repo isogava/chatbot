@@ -15,18 +15,14 @@ dict = {'こんにちは':'コンニチハ','おはよう':'早起きですね�
         'はい':'ハイ'}
 name = st.text_input('コメントをどうぞ！')
 
-c = 5
-while c > 0:
-        if name == "スズキ":
-          st.text(f'ようこそ！{name}さん！')
-          list.append(name)
-        elif name in dict:
-          st.text('私の辞書では、' + dict[name] + 'と返事をします。')
-          list.append(name)
-        else:
-          if name == '':
-            st.text('コメントをお願いします')
-          else:
-            list.append(name)
-        c = c - 1
+if name == "スズキ":
+  st.text(f'ようこそ！{name}さん！')
+  list.append(name)
+elif name in dict:
+  st.text('私の辞書では、' + dict[name] + 'と返事をします。')
+  list.append(name)
+else:
+  if len(name) > 0:
+    list.append(name)
+
 st.text(list)
