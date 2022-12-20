@@ -26,3 +26,15 @@ else:
   if len(name) > 0:
     list.append(name)
 st.text(list)
+
+
+
+while True:
+        command = input('pybot')
+        if 'こんにちは' in  command:
+                print('hello')
+        elif 'こんばんは' in command:
+                print('good night')
+        else:
+                print('??')
+        
