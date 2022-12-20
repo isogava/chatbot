@@ -9,7 +9,7 @@ dict = {'こんにちは':'コンニチハ','おはよう':'早起きですね�
         'はい':'ハイ'}
 
 
-text = st.text_input("表示したい単語を入力してください")
+text = st.text_input("ご質問をどうぞ")
 
 if 'text_list' not in st.session_state:
   st.session_state["text_list"] = []
@@ -17,12 +17,9 @@ if 'text_list' not in st.session_state:
 col1, col2 = st.columns(2)
 
 with col1:
-  if st.button("追加", key=2):
+  if st.text_input:
     st.session_state["text_list"].append(text)
 
-with col2:
-  if st.button("削除", key=3): 
-    st.session_state["text_list"].remove(text)
       
 for output_text in st.session_state["text_list"]:
   st.write("", output_text)
