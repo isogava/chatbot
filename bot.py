@@ -14,9 +14,7 @@ text = st.text_input("ご質問をどうぞ")
 if 'text_list' not in st.session_state:
   st.session_state["text_list"] = []
 
-if len(st.text_input) == 0:
-        
-else:
+if not st.text_input:
     st.session_state["text_list"].append(text)
     st.session_state["text_list"].append(text + "なんですね。")
         
