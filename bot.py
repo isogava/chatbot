@@ -11,8 +11,8 @@ st.caption('キャプション')
 
 counter = 5
 print(counter)
-    name = st.text_input('コメント')
-    st.text(f'ようこそ！{name}さん！')
-    counter = counter -1
+name = st.text_input('コメント')
+
+st.text(f'ようこそ！{name}さん！')
 
 #st.text(f'こんばんは！{name}さん！')
