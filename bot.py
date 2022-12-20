@@ -30,7 +30,7 @@ st.text(list)
 
 
 while True:
-        command = input('pybot')
+        command = st.text_input('コメント')
         if 'こんにちは' in  command:
                 print('hello')
         elif 'こんばんは' in command:
