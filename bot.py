@@ -19,7 +19,7 @@ input = st.text_input("文字入力")
 
 if input:
     lst.append(input)
-st.table(lst)
+st.table(lst,1)
 
 # 風船飛ばす
 st.balloons()
