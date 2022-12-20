@@ -1,13 +1,8 @@
-# ライブラリの読み込み
-from slackbot.bot import Bot
+import streamlit as st
 
+st.title('chat bot test')
+st.caption('test')
 
-def main():
+name = st.text_input('コメント')
+print(name)
 
-    # ボットの起動
-    bot = Bot()
-    bot.run()
-
-
-if __name__ == "__main__":
-    main()
