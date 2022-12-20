@@ -13,9 +13,9 @@ dict = {'こんにちは':'コンニチハ', 'こんばんは':'コンバンハ'
 name = st.text_input('コメントをどうぞ！')
 
 if name == "aaa":
-  name = name, name*2 
   st.text(f'ようこそ！{name}さん！')
 elif name in dict:
   st.text(f'{name}さんですね！')
 else:
-  st.text('何か別の言葉をお願いします')
+  if name <> '':
+    st.text('何か別の言葉をお願いします')
