@@ -42,6 +42,8 @@ with col1:
 
         for output_text in st.session_state["text_list"]:
           st.write(output_text)
-
+write('応答用の辞書は、まだこのくらいです。')
+write(dict)
+        
 # 風船飛ばす
 st.balloons()
