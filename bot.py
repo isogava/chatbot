@@ -16,4 +16,4 @@ while counter > 0:
     st.text(f'ようこそ！{name}さん！')
     counter = counter -1
 
-st.text(f'こんばんは！{name}さん！')
+#st.text(f'こんばんは！{name}さん！')
