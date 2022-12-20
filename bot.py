@@ -23,3 +23,8 @@ else:
     st.text('コメントをお願いします')
   else:
     st.text('何か別の言葉をお願いします')
+
+c = 5
+while c > 1:
+        st.text('もっと話して')
+        c = c - 1
