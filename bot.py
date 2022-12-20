@@ -4,9 +4,9 @@ st.title('チャットボットのテスト')
 st.caption('キャプション')
 
 name = ""
-if name = "";
+if name == "":
 
-else;
+else:
   st.text(f'ようこそ！{name}さん！')
 
 
