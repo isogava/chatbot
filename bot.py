@@ -16,10 +16,12 @@ if 'text_list' not in st.session_state:
 
 col1, col2 = st.columns(2)
 
-with col1:
+with col2:
   if st.text_input:
     st.session_state["text_list"].append(text)
-
+with col1:
+  if st.text_input:
+    st.write(st.session_state["text_list"],"desu")
       
 for output_text in st.session_state["text_list"]:
   st.write("", output_text)
