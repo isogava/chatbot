@@ -11,5 +11,9 @@ st.caption('キャプション')
 
 
 name = st.text_input('コメント')
-print(name)
 st.text(f'ようこそ！{name}さん！')
+
+message = 'Hello Python'
+
+for ch in message:
+    print(ch)
