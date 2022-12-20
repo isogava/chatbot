@@ -7,7 +7,7 @@ list = ['はじめまして！']
 dict = {'こんにちは':'コンニチハ','おはよう':'早起きですね！',
         'こんばんは':'コンバンハ',
         'はい':'ハイ'}
-col1, col2 = st.colums((1,1))
+col1, col2 = st.columns(2)
 
 with col1:
   text = st.text_input("ご質問をどうぞ")
