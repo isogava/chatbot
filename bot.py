@@ -24,7 +24,7 @@ with col1:
     st.write(text,"desu")
       
 for output_text in st.session_state["text_list"]:
-  st.write('<span style="color:red;background:pink">該当するデータがありません・・・・</span>',"", output_text)
+  st.write('<span style="color:red;background:pink">', output_text, '</span>')
 
 # 風船飛ばす
 st.balloons()
