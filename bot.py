@@ -9,11 +9,13 @@ st.caption('キャプション')
 #else:
 #  st.text(f'ようこそ！{name}さん！')
 
+dict = {'こんにちは':'コンニチハ', 'こんばんは':'コンバンハ', 'はい':'ハイ'}
+name = st.text_input('コメントをどうぞ！')
 
-name = st.text_input('コメント')
-
-st.text(f'ようこそ！{name}さん！')
 if name == "aaa":
   name = name, name*2 
   st.text(f'ようこそ！{name}さん！')
-#st.text(f'こんばんは！{name}さん！')
+elif name in dict:
+  st.text(f'{name}さんですね！')
+else:
+  st.text('何か別の言葉をお願いします')
