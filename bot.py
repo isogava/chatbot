@@ -17,11 +17,11 @@ name = st.text_input('コメントをどうぞ！')
 
 if name == "スズキ":
   st.text(f'ようこそ！{name}さん！')
-  list = list.append(name)
+  list.append(name)
   st.text(list)
 elif name in dict:
   st.text('私の辞書では、' + dict[name] + 'と返事をします。')
-  list = list.append(name)
+  list.append(name)
   st.text(list)
 else:
   if name == '':
