@@ -6,3 +6,4 @@ st.caption('test')
 name = st.text_input('コメント')
 print(name)
 
+print("test")
