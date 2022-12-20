@@ -21,3 +21,5 @@ if input:
     lst.append(input)
 st.table(lst)
 
+# 風船飛ばす
+    st.balloons()
