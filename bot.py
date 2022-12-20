@@ -21,7 +21,7 @@ with col2:
     st.session_state["text_list"].append(text)
 with col1:
   if st.text_input:
-    st.write(st.session_state["text_list"],"desu")
+    st.write(text,"desu")
       
 for output_text in st.session_state["text_list"]:
   st.write("", output_text)
