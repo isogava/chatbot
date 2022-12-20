@@ -30,6 +30,5 @@ while c > 0:
             st.text('コメントをお願いします')
           else:
             st.text('何か別の言葉をお願いします')
-        st.text('もっと話して')
-        st.text(list)
         c = c - 1
+st.text(list)
