@@ -13,9 +13,8 @@ list = ['はじめまして！']
 dict = {'こんにちは':'コンニチハ','おはよう':'早起きですね！',
         'こんばんは':'コンバンハ',
         'はい':'ハイ'}
+name = st.text_input('コメントをどうぞ！')
 while True:
-        name = st.text_input('コメントをどうぞ！')
-
         if name == "スズキ":
           st.text(f'ようこそ！{name}さん！')
           list.append(name)
@@ -25,5 +24,4 @@ while True:
         else:
           if len(name) > 0:
             list.append(name)
-
         st.text(list)
