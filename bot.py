@@ -1,5 +1,4 @@
 import streamlit as st
-import pyautogui as pg
 
 st.title('チャットボットのテスト')
 st.caption('キャプション')
@@ -20,7 +19,5 @@ input = st.text_input("文字入力")
 
 if input:
     lst.append(input)
-    pg.hotkey('Ctrl', 'a')
-    pg.hotkey('delete')
-st.write(lst)
+st.table(lst)
 
