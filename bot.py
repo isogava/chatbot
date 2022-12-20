@@ -6,4 +6,4 @@ st.caption('キャプション')
 name = st.text_input('コメント')
 print(name)
 
-st.text('コメント {name} ありがとうございます！')
+st.text(f'ようこそ！{name}さん！')
