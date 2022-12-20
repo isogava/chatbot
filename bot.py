@@ -17,7 +17,6 @@ name = st.text_input('コメントをどうぞ！')
 
 c = 5
 while c > 1:
-        
         if name == "スズキ":
           st.text(f'ようこそ！{name}さん！')
           list = list.append(name)
@@ -29,7 +28,6 @@ while c > 1:
             st.text('コメントをお願いします')
           else:
             st.text('何か別の言葉をお願いします')
-
     st.text('もっと話して')
     c = c - 1
 st.text(list)
