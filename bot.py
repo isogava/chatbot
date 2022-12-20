@@ -3,35 +3,23 @@ import streamlit as st
 st.title('チャットボットのテスト')
 st.caption('キャプション')
 
-#name = ""
-#if name == "":
-#  print('コメントよろしく')
-#else:
-#  st.text(f'ようこそ！{name}さん！')
-
 list = ['はじめまして！']
 dict = {'こんにちは':'コンニチハ','おはよう':'早起きですね！',
         'こんばんは':'コンバンハ',
         'はい':'ハイ'}
+import pyautogui as pg
 
+@st.cache(allow_output_mutation=True)
+def cache_lst():
+    lst = []
+    return lst
 
-name = st.text_input('コメントをどうぞ！')
-if name == "スズキ":
-  st.text(f'ようこそ！{name}さん！')
-  list.append(name)
-elif name in dict:
-  st.text('私の辞書では、' + dict[name] + 'と返事をします。')
-  list.append(name)
-else:
-  if len(name) > 0:
-    list.append(name)
-st.text(list)
+lst = cache_lst()
+input = st.text_input("文字入力")
 
-while True:
-  command = st.text_input('コメント')
-  if 'こんにちは' in  command:
-    print('hello')
-  elif 'こんばんは' in command:
-    print('good night')
-  else:
-    print('??')
+if input:
+    lst.append(input)
+#    pg.hotkey('Ctrl', 'a')
+#    pg.hotkey('delete')
+st.write(lst)
+
