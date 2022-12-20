@@ -7,5 +7,5 @@ name = st.text_input('コメント')
 print(name)
 
 
-
-st.code(code, language='Python')
+name2 = st.text_input('お返事')
+print(name2)
