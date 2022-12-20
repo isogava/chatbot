@@ -18,8 +18,12 @@ with col2:
 with col1:
         if st.text_input:
           if len(text) > 0:
-            st.session_state["text_list"].append('あなた：' + text)
-            st.session_state["text_list"].append('ボット：' + text + "なんですね。")
+            if text in dict:
+              st.session_state["text_list"].append('あなた：' + text)
+              st.session_state["text_list"].append('ボット：' + dict(text))
+            else:
+              st.session_state["text_list"].append('あなた：' + text)
+              st.session_state["text_list"].append('ボット：' + text + "なんですね。")
 
         for output_text in st.session_state["text_list"]:
           st.write(output_text)
