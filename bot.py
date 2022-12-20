@@ -11,7 +11,7 @@ st.caption('キャプション')
 
 counter = 5
 while counter > 0:
-    print(counter)
+#    print(counter)
     name = st.text_input('コメント')
     st.text(f'ようこそ！{name}さん！')
     counter = counter -1
