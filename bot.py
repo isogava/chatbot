@@ -9,17 +9,23 @@ dict = {'こんにちは':'コンニチハ','おはよう':'早起きですね�
         'はい':'ハイ'}
 
 
-@st.cache(allow_output_mutation=True)
-def cache_lst():
-    lst = []
-    return lst
+text = st.text_input("表示したい単語を入力してください")
 
-lst = cache_lst()
-input = st.text_input("文字入力")
+if 'text_list' not in st.session_state:
+  st.session_state["text_list"] = []
 
-if input:
-    lst.append(input)
-st.table(lst,1)
+col1, col2 = st.columns(2)
+
+with col1:
+  if st.button("追加", key=2):
+    st.session_state["text_list"].append(text)
+
+with col2:
+  if st.button("削除", key=3): 
+    st.session_state["text_list"].remove(text)
+      
+for output_text in st.session_state["text_list"]:
+  st.write("", output_text)
 
 # 風船飛ばす
 st.balloons()
