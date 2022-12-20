@@ -6,7 +6,7 @@ st.caption('キャプション')
 list = ['はじめまして！']
 dict = {'こんにちは':'コンニチハ','おはよう':'早起きですね！',
         'こんばんは':'コンバンハ',
-        'パイソン':'Python\n https://ja.wikipedia.org/wiki/Python'
+        'パイソン':'Python\n https://ja.wikipedia.org/wiki/Python',
         'はい':'ハイ'}
 col1, col2 = st.columns(2)
 
