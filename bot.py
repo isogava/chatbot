@@ -13,7 +13,8 @@ col1, col2 = st.columns(2)
 
 if 'text_list' not in st.session_state:
   st.session_state["text_list"] = []
-
+with col2:
+  text = st.text_input("ご質問をどうぞ")
 with col1:
         if st.text_input:
           if len(text) > 0:
@@ -22,7 +23,6 @@ with col1:
 
         for output_text in st.session_state["text_list"]:
           st.write(output_text)
-with col2:
-  text = st.text_input("ご質問をどうぞ")
+
 # 風船飛ばす
 st.balloons()
