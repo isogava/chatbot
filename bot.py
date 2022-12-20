@@ -5,7 +5,7 @@ st.caption('キャプション')
 
 name = ""
 if name == "":
-
+  print('コメントよろしく')
 else:
   st.text(f'ようこそ！{name}さん！')
 
