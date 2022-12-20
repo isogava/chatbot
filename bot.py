@@ -1,9 +1,12 @@
 import streamlit as st
 
-st.title('chat bot test')
-st.caption('test0120')
+st.title('チャットボットのテスト')
+st.caption('キャプション')
 
 name = st.text_input('コメント')
 print(name)
 
 print("test")
+
+
+st.code(code, language='Python')
