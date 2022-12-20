@@ -9,11 +9,11 @@ st.caption('キャプション')
 #else:
 #  st.text(f'ようこそ！{name}さん！')
 
+counter = 5
+while counter > 0:
+    print(counter)
+    name = st.text_input('コメント')
+    st.text(f'ようこそ！{name}さん！')
+    counter = counter -1
 
-name = st.text_input('コメント')
-st.text(f'ようこそ！{name}さん！')
-
-message = 'Hello Python'
-
-for ch in message:
-    print(ch)
+st.text(f'こんばんは！{name}さん！')
