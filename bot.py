@@ -27,14 +27,11 @@ else:
     list.append(name)
 st.text(list)
 
-
-
 while True:
-        command = st.text_input('コメント')
-        if 'こんにちは' in  command:
-                print('hello')
-        elif 'こんばんは' in command:
-                print('good night')
-        else:
-                print('??')
-        
+  command = st.text_input('コメント')
+  if 'こんにちは' in  command:
+    print('hello')
+  elif 'こんばんは' in command:
+    print('good night')
+  else:
+    print('??')
