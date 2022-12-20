@@ -16,7 +16,8 @@ if 'text_list' not in st.session_state:
 
 if st.text_input:
     st.session_state["text_list"].append(text)
-      
+    st.session_state["text_list"].append(text + "なんですね。")
+        
 for output_text in st.session_state["text_list"]:
   st.write(output_text)
 
