@@ -15,7 +15,7 @@ name = st.text_input('コメントをどうぞ！')
 if name == "aaa":
   st.text(f'ようこそ！{name}さん！')
 elif name in dict:
-  st.text(f'{name}さんですね！')
+  st.text('私の辞書では、', dict[name], 'と返事をします。')
 else:
   if name == '':
     st.text('コメントをお願いします')
